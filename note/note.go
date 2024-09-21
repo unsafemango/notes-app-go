@@ -9,10 +9,11 @@ import (
 	"time"
 )
 
+// note struct initialization
 type Note struct {
-	Title     string
-	Content   string
-	CreatedAt time.Time
+	Title     string    `json:"title"` // struct tags for certain packages to change their output
+	Content   string    `json:"content"`
+	CreatedAt time.Time `json:"created_at"`
 }
 
 // receiver method to print out message
